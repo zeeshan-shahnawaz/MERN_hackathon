@@ -102,3 +102,6 @@ Thumbs.db
 
 # Uploads directory (if contains user uploads)
 uploads/
+
+# Vercel
+.vercel
