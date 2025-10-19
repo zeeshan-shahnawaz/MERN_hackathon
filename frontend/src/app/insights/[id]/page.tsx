@@ -125,7 +125,7 @@ export default function InsightDetailPage() {
 
   const fetchInsight = async () => {
     try {
-      const response = await apiClient.get(`/insights/${params.id}`);
+      const response = await apiClient.get<{ success: boolean; data: AiInsight }>(`/insights/${params.id}`);
       setInsight(response.data);
       
       // Mark as read
